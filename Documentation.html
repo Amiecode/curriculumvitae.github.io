@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>About | Digital CV</title>
+	<link rel="stylesheet" type="text/css" href="docCss.css">
+</head>
+<body>
+	<!--**********************MENU*********************-->
+    <div class="menubar">
+        <div class="logo">
+              <!-- *****************************Hambuger Menu***************************** -->
+              <span id="lines" style="font-size: 30px; cursor: pointer;" onclick="openbar()">&#9776;</span> 
+          <div id="hamburger" class="bar">
+              <span class="cross" style="font-size: 30px; cursor: pointer;" onclick="closebar()">&times;</span>
+              <img id="cvlogo" src="Images/logoBar.png">
+              <a href="Index.html">Home</a>
+              <a href="Introduction.html">Introduction</a>
+              <a href="Career.html">Career</a>
+              <a href="Education.html">Education</a>
+              <a href="Portfolio.html">Portfolio</a>
+              <a href="Contact.html">Contact</a>
+              <a href="Documentation.html">Documentation</a>
+
+              <img id="amielogo" src="Images/amie.png" alt="logo"> 
+          </div>
+      <!-- ********* Hamburger Menu ********* -->
+
+         <script >
+          function openbar() {
+            document.getElementById("hamburger").style.display="block";
+          }
+            function closebar() {
+            document.getElementById("hamburger").style.display="none";
+          }
+         </script>
+        <!-- ***************************** End Hambuger Menu***************************** -->
+          <img id="headimg" src="Images/loog.png">
+     </div>
+   </div>
+    <!--**********************MENU*********************-->
+     <main>
+      <div class="left_section">	
+     	<div class="about" id="photoshop">
+     		<h2>1. PHOTOSHOP</h2>
+     		<ul>
+     			<li>Logo Resize</li>
+     			<li>Logo Transparent</li>
+     			<li>Color Inversion of Logo</li>
+     		</ul>
+     	</div>
+     	<div class="about" id="htmlcss">
+     		<h2>2. HTML and CSS</h2>
+     		<ul>
+     		<li>Almost 70% of these webpages are made with HTML and CSS</li>
+     		<li>Also included Semantic Tags of HTML5(summary tag,main tag ,header,footer) and New properties introduced in CSS3 like FlexBox etc.</li>
+     		</ul>
+     	</div>
+     	<div class="about" id="javascript">
+     		<h2>3. JAVASCRIPT</h2>
+     		<ul>
+     			<li>Hambuger Menu</li>
+     			<li>Contact Page Validation</li>
+     		</ul>
+     	</div>
+     	<div class="about" id="jquery">
+     		<h2>4. jQuery</h2>
+     		<p>
+     			<ul>
+     				<li>Show and Hide Effect of Image in Introduction Page.</li>
+     				<li>jQuery UI - Date Picker, Accordian, Tabs</li>
+     			</ul>
+     		</p>
+     	</div>
+     	<div class="about" id="others">
+     		<h2>5. Other Online Stuff used:</h2>
+     		<ul>
+     			<li>CDN links</li>
+     			<li>Font Awesome CDN link for Social Media Icons</li>
+     			<li>SweetAlert CDN link for Interactive PopUp box at Index page</li>
+     			<li>Canva.com for logo making and Creating Background Image of Index Page</li>
+     			<li>Flickity.com- Carousal/Slider of Carrier Page</li>
+     			<li>Google Fonts</li>
+     		</ul>
+     		
+     	</div>
+     </div>
+       <aside class="right_section">
+
+       </aside>	
+     </main>
+</body>
+</html>

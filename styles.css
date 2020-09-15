@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+body{
+  background:linear-gradient(to right,#fff,#fece0c,#fff);
+}
+
+ /********* Hamburger Menu *********/
+      #lines{
+        position: absolute;
+        top: 20px;
+      }
+        .bar{
+            display: none;
+            width: 200px;
+            height: 100vh;
+            background: linear-gradient(to left,#fff,#fece0c);
+            position: fixed;
+            top: 0;
+            left:0;
+            z-index: 1;
+        }
+        .bar a{
+            display: block;
+            text-decoration: none;
+            padding: 30px 30px 8px 30px;
+            color: black;
+            font-size: 15px;
+            letter-spacing: 1px;  
+        }
+        .bar a:hover{
+          background:linear-gradient(to right,#649bff,#0070fa,#649bff);
+          color: white;
+        }
+        .cross{
+            padding-left: 160px;
+        }
+        .bar #cvlogo{
+            padding-left: 15px;
+        }
+        .bar #amielogo{
+            position: fixed;
+            bottom: 10px;
+            left:10px;
+            height: 60px;
+            width: 50px;
+        }
+        #headimg{
+          margin-left: 35px;
+        }
+        /********* End Hamburger Menu *********/ 
+
+.wrapper{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  max-width: 350px;
+  width: 100%;
+  background: #fff;
+  padding: 25px;
+  border-radius: 5px;
+  box-shadow: 4px 4px 2px rgba(254,236,164,1); 
+}
+
+.wrapper h2{
+  text-align: center;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: #332902;
+}
+
+.wrapper .input_field{
+  margin-bottom: 10px;
+}
+
+.wrapper .input_field input[type="text"],
+.wrapper textarea{
+  border: 1px solid #e0e0e0;
+  width: 100%;
+  padding: 10px;
+}
+
+.wrapper textarea{
+  resize: none;
+  height: 80px;
+}
+
+.wrapper .btn input[type="submit"]{
+  border: 0px;
+  margin-top: 15px;
+  padding: 10px;
+  text-align: center;
+  width: 100%;
+  background: #fece0c;
+  color: #332902;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-weight: bold;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+#error_message{
+  margin-bottom: 20px;
+  background: #fe8b8e;
+  padding: 0px;
+  text-align: center;
+  font-size: 14px;
+  transition: all 0.5s ease;
+}
+
+         /***************Social Media Icons*********************/
+            .icons{
+            width: 250px;
+            height: 100px;
+            position: absolute;    
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            bottom: 0px;
+            left: 650px;
+        }
+        .icons a{
+           padding: 10px;
+           height: 50px;
+           width: 50px;
+           background-color: #f5f6fa;
+           border-radius: 50%;
+           box-shadow: 1px 2px 2px 2px #dcdde1;
+        }
+        .icons a i{
+            font-size: 35px;
+
+        }
+        .icons a:hover i{
+            font-size: 40px;
+            transition: all 0.3s linear;
+        }
+        .fa-facebook{
+            color: #;
+        }
+        .fa-instagram{
+            color: #e84118;
+        }
+        .fa-twitter{
+            color: #0097e6;
+        }
+        .fa-whatsapp{
+            color: #1fff6d;
+        }
+        /*************** End Social Media Icons*********************/

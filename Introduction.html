@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Introduction | Digital CV</title>
+	<script type="text/javascript" src="jquery.js"></script>        <!--jQuery Core file -->
+	<script type="text/javascript" src="jquery-ui/jquery-ui.js"></script>    <!--jQuery UI file ,this file must be after jQuery core file -->
+	    <!--CSS files of Jquey Ui-->
+	<link rel="stylesheet" type="text/css" href="jquery-ui/jquery-ui.css">
+	<link rel="stylesheet" type="text/css" href="jquery-ui/jquery-ui.structure.css">
+	<link rel="stylesheet" type="text/css" href="jquery-ui/jquery-ui.theme.css">
+
+	<style type="text/css">
+    *{
+       box-sizing: border-box; 
+    }
+		body{
+	       background: linear-gradient(to right,#fff,#3948db,#fff);
+      } 
+      /********* Hamburger Menu *********/
+      #lines{
+        position: absolute;
+        top: 20px;
+      }
+        .bar{
+            display: none;
+            width: 200px;
+            height: 100vh;
+            background: linear-gradient(to left,#fff,#649bff);
+            position: fixed;
+            top: 0;
+            left:0;
+            z-index: 1;
+        }
+        .bar a{
+            display: block;
+            text-decoration: none;
+            padding: 30px 30px 8px 30px;
+            color: black;
+            font-size: 15px;
+            letter-spacing: 1px;  
+        }
+        .bar a:hover{
+          background:linear-gradient(to right,#649bff,#0070fa,#649bff);
+          color: white;
+        }
+        .cross{
+            padding-left: 160px;
+        }
+        .bar #cvlogo{
+            padding-left: 15px;
+        }
+        .bar #amielogo{
+            position: fixed;
+            bottom: 10px;
+            left:10px;
+            height: 60px;
+            width: 50px;
+        }
+        #headimg{
+          margin-left: 35px;
+        }
+        /********* End Hamburger Menu *********/ 
+    .marquee{
+     font-family: impact;
+     font-size: 20px;
+    letter-spacing: 2px;
+    color: white;
+     } 
+		.image img{
+			width: 100px;
+			height: 100px;
+			display: none;
+		}
+		.intro{
+			font-weight: bold;
+			font-family: ink free;
+		}
+		.image,.date,.otherdetails{
+			border: 2px solid #ccc;
+			border-radius: 5px;
+			display: flex;
+			justify-content: space-around;
+			align-items: center;
+			width: 30%;
+			box-shadow: 3px 3px 3px aqua;
+		}
+	    .accordion,#tabs{
+	    	border: 2px solid #ccc;
+			border-radius: 5px;
+			width: 80%;
+			box-sizing: border-box;
+			justify-content: center;
+			padding:10px 20px;
+			box-shadow: 3px 3px 3px aqua;
+	    }
+
+	    /**************************************************************/
+	    .skillset{
+	width: 485px;
+	height: 550px;
+	background-color: rgba(163,207,201,0.3);
+	padding:10px;
+	border-radius: 15px;
+	border:2px solid #ccc;
+	
+
+}
+.skills{
+	text-align: right;
+	padding-top: 5px;
+	padding-bottom: 10px;
+	color: white;
+	font-family: ink free;
+	background-color: grey;
+	border-radius: 10%;
+	border:0.25px solid #ccc;
+}
+/*Programming Lang:*/
+.c{
+   width: 90%;
+   background-color: #17d8e6;
+}
+.cpp{
+    width: 70%;
+   background-color: #999c86;
+}
+.java{
+    width: 40%;
+   background-color: #17d8e6;
+}
+.py{
+    width: 30%;
+   background-color: #999c86;
+}
+.mat{
+     width: 55%;
+   background-color: #17d8e6;
+}
+/*Web Programming*/
+.wd{
+     width: 70%;
+   background-color: #999c86;
+}
+.wdev{
+     width: 50%;
+   background-color: #17d8e6;
+}
+.js{
+    width: 50%;
+   background-color: #999c86;
+}
+.php{
+   width: 30%;
+   background-color: #17d8e6;
+}
+.sql{
+     width: 40%;
+   background-color: #999c86;
+}
+	    /**************************************************************/
+	</style>
+</head>
+<body>
+  <div class="menubar">
+        <div class="logo">
+              <!-- *****************************Hambuger Menu***************************** -->
+              <span id="lines" style="font-size: 30px; cursor: pointer;" onclick="openbar()">&#9776;</span> 
+              <div id="hamburger" class="bar">
+              <span class="cross" style="font-size: 30px; cursor: pointer;" onclick="closebar()">&times;</span>
+              <img id="cvlogo" src="Images/logoBar.png">
+              <a href="Index.html">Home</a>
+              <a href="Introduction.html">Introduction</a>
+              <a href="Career.html">Career</a>
+              <a href="Education.html">Education</a>
+              <a href="Portfolio.html">Portfolio</a>
+              <a href="Contact.html">Contact</a>
+              <a href="Documentation.html">Documentation</a>
+
+              <img id="amielogo" src="Images/amie.png" alt="logo"> 
+          </div>
+      <!-- ********* Hamburger Menu ********* -->
+
+         <script >
+          function openbar() {
+            document.getElementById("hamburger").style.display="block";
+          }
+            function closebar() {
+            document.getElementById("hamburger").style.display="none";
+          }
+         </script>
+        <!-- ***************************** End Hambuger Menu***************************** -->
+          <img id="headimg" src="Images/loog.png">
+     </div>
+   </div>  
+         <marquee class="marquee" direction="left"> Hello! This is Aamir Mohiuddin and you are at the introduction page of DIGITAL CURRILUM VITAE!!!</marquee>
+
+     <h4 class="intro">1. Photograph</h4>
+        <div class="image">
+        	  <h4>Aamir Mohiuddin Malla</h4>
+        	 <button id="b1">Show</button><br>
+             <img id="photo" src="Images\amir.jpg" alt="image">
+        </div>
+
+  <h4 class="intro">2. Date Of Birth</h4>
+  <div class="date">
+  	<h4>D.O.B</h4>
+  	<input type="text" name="dob" placeholder="15-Apr-1997">
+  </div>
+  <h4 class="intro">3. Educational Qualification </h4>
+  <div class="accordion">
+  	        <h3>Matriculation</h3>
+  	        <p>Passed 10th (high schooling) from KOUSARIA SECONDARY SCHOOL CHECKRESHIPORA Bandipora under Jammu & Kashmir Board of School Education with
+            378/500.</p>
+
+  	        <h3>10 + 2</h3>
+  	        <p>Passed 10+2 (high secondary studies) with Science + Maths from NADIM MEMORIAL HIGHER SECONDARY(NMHS) under Jammu & Kashmir Board of School
+            Education with 416/500.</p>
+
+  	        <h3>B.Sc (BSCN)</h3>
+  	        <p>Passed Bachelors of Science(BSC with Computer Application-BSCN) from Govt. Degree College Bandipora(GDC Bpr. Putushay) under University of Kashmir with 7.6 CGPA.</p>
+
+  	         <h3>MCA</h3>
+  	        <p>Currently persuing Masters in Computer Application(MCA) at University Of Kashmir, Hazratbal Srinagar.</p>
+  </div>
+
+           <h3 class="intro">4. Other Details</h3>
+           <div class="otherdetails">
+           	  <h4> Nationality<br>Languages Known and<br> Marital Status</h4>
+           	  <br>
+           	  <button id="btn">Click to See</button>
+
+           	    <div class="messagebox">
+           	    	<p> Nationality     : <b>Indian</b><br>
+           	    	    Languages Known : <b> English,Urdu,Kashmiri</b> <br>
+           	    	    Marital Status  : <b>Single</b></p>
+           	    </div>
+           </div>
+               <!-- ************************ Skills Bar **************************-->
+             <h4 class="intro">5. Professional Qualification</h4>
+              <div class="skillset">
+              	<h2>Programming Languages Known</h2>
+              	    <div class="skills c ">C - 90%</div>
+              	    <div class="skills cpp">C++ - 70%</div>
+              	    <div class="skills java">Java - 40%</div>
+              	    <div class="skills py">Python - 30%</div>
+              	    <div class="skills mat">Matlab - 55%</div>
+
+                <h2>Web Programming</h2>
+              	    <div class="skills wd">Web Design - 70%</div>
+              	    <div class="skills wdev">Web Development - 50%</div>
+              	    <div class="skills js">JavaScript - 50%</div>
+              	    <div class="skills php">PHP - 30%</div>
+              	    <div class="skills sql">MySQL - 40%</div>
+
+              </div>
+            <!-- ************************ End Skills Bar **************************-->
+           <h3 class="intro">6. Interests</h3>
+           <div id="tabs">
+               <ul>
+               	<li> <a href="#tab1">FootBall</a></li>
+               	<li> <a href="#tab2">Cricket</a></li>
+               	<li> <a href="#tab3">VolleyBall</a></li>
+                <li> <a href="#tab4">Gym</a></li>
+                <li> <a href="#tab5">Other</a></li>
+               </ul>
+               <div id="tab1">
+               	<p>Huge football.<br>Play as Center Forward.<br>Fan of Lionel Messi</p>
+               </div>
+               <div id="tab2">
+               	<p>Moderate Cricket Lover.<br>Prefer Bowling than to bat.<br>Play both left hand as well as right hand<br>Fan of MSD,Virat,ABD,AKTHAR,AFRIDI</p>
+               </div>
+               <div id="tab3">
+               	<p>Used to play in School.<br>At center Place and sometimes booster as well.<br>Missing those days</p>
+               </div>
+               <div id="tab4">
+                <p>Fitness Freak</p>
+               </div>
+               <div id="tab5">
+                <p>Photography and Music.</p>
+               </div>
+           </div>
+</body>
+<script type="text/javascript">
+	$('input').datepicker({
+		numberOfMonths :1,
+		changeYear : true,
+		changeMonth : true,
+		showWeek : true,
+		weekHeader : "Weeks",
+		showOtherMonths : true,
+		minDate : new Date(2017,0,5),         /*Date Validation Parameters */
+		maxDate : new Date(2021,1,10)
+	});
+
+	$('.accordion').accordion({
+		collapsible : true,
+		event : "click",
+		animate : 300,
+		active : 0,
+		heightStyle : true,
+	    icons :{header : "ui-icon-arrowstop-1-e", activeHeader : "ui-icon-arrowstop-1-s"}
+	});
+
+	$('.messagebox').hide();
+
+	$('#btn').click(function(){
+		$('.messagebox').dialog({
+			title : "Other Details",
+			draggable : false,
+			resizable : true,
+			width : 500,
+			modal : true,
+
+			buttons : [
+			{
+				text : "Thank You!",
+				icon : "ui-icon-heart",
+				click : function(){
+					$(this).dialog("close")
+				}
+
+			}
+			]
+		});
+	});
+      
+      $( "#tabs" ).tabs({
+      	collapsible: true,
+      	 event: "click"
+      });
+
+       $("#b1").click(function(){
+          	if($(this).html()=="Show"){
+          		$(this).html("Hide");
+          		$("#photo").show(2000,'swing',function(){
+          			alert("S/O: Ghulam Mohiuddin Malla,R/O: Bandipora");
+          		});
+          	}
+          	else{
+          		$(this).html("Show");
+          		$("#photo").hide(2000);
+          	}
+          });
+
+</script>
+</html>

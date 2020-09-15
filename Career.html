@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Career | Digital CV</title>
+	<link rel="stylesheet" type="text/css" href="careerstyle.css">
+  <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+  <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+  <script type="text/javascript" src="jquery.js"></script>
+</head>
+<body> 
+	 <!--**********************MENU*********************-->
+    <div class="menubar">
+        <div class="logo">
+              <!-- *****************************Hambuger Menu***************************** -->
+              <span id="lines" style="font-size: 30px; cursor: pointer;" onclick="openbar()">&#9776;</span> 
+          <div id="hamburger" class="bar">
+              <span class="cross" style="font-size: 30px; cursor: pointer;" onclick="closebar()">&times;</span>
+              <img id="cvlogo" src="Images/logoBar.png">
+              <a href="Index.html">Home</a>
+              <a href="Introduction.html">Introduction</a>
+              <a href="Career.html">Career</a>
+              <a href="Education.html">Education</a>
+              <a href="Portfolio.html">Portfolio</a>
+              <a href="Contact.html">Contact</a>
+              <a href="Documentation.html">Documentation</a>
+
+              <img id="amielogo" src="Images/amie.png" alt="logo"> 
+          </div>
+      <!-- ********* Hamburger Menu ********* -->
+
+         <script >
+          function openbar() {
+            document.getElementById("hamburger").style.display="block";
+          }
+            function closebar() {
+            document.getElementById("hamburger").style.display="none";
+          }
+         </script>
+        <!-- ***************************** End Hambuger Menu***************************** -->
+          <img id="headimg" src="Images/loog.png">
+     </div>
+   </div>
+    <!--**********************MENU*********************-->
+       <!--*************Carousal****************-->
+         <div class="main-carousel" data-flickity='{ "wrapAround": "true", "autoPlay": "true" }'>
+               <div class="carousel-cell">
+                 <img src="Images/LOGO2.png">
+               </div>
+               <div class="carousel-cell" id="amirslide">
+                  <img id="amir" src="Images/amir.jpg">
+                  <h2>Digital Curriculum Vitae</h2>
+                 <p>This CV belongs to Aamir Mohiuddin Malla</p>
+                 <p>Student,University Of Kashmir</p>
+               </div>
+               <div class="carousel-cell" id="muheetslide">
+                <img id="amir2" src="Images/amir.jpg"><img id="muheetsir" src="Images/ErMuheet.jpg"">
+                  <h2>Digital Curriculum Vitae</h2>
+                 <p>This Website is Developed By <b>Aamir Mohiuddin Malla</b>.This is not any official Website.It is Univerity Based Assignment Submitted by Aamir Mohiuddin to <b>Dr MUHEET AHMAD BUTT</b>.(Scientist D, University of Kashmir- Deppt Of Computer Science</p>
+               </div>
+               <div class="carousel-cell">
+                  <h2>FLICKITY</h2>
+                 <p>This Slider is made with the help of Flickity.com</p>
+               </div>
+        
+       </div>
+       <!--************************End Carousal************************-->
+       <!-- ************************ Testimonials **************************-->
+         <div class="container">
+         	<img src="Images/ErMuheet.jpg" alt="muheetsir" style="width: 120px;height: 120px;margin: 16px 0;">
+         	<h3>Assignment Submitted TO:</h3>
+         	<p>Dr.Muheet Ahmad Butt.<br>Scientist D,Univeristy of Kashmir</p><br>
+         	<p>Email for reference: <b>ermuheet@gmail.com</b></p>	
+         </div>
+         <div class="containeramie">
+         <img src="Images/amir.jpg" alt="amie" style="width: 120px;height: 120px;margin: 16px 0;">
+         	<h3>Assignment Submitted BY:</h3>
+         	<p>Aamir Mohiuddin Malla.<br>Student,Univeristy of Kashmir<br>Roll No. <b>38</b><br>Email for reference: <b>aamirmca38@gmail.com</b></p>
+         	
+         </div>	
+          <!-- ************************End Testimonials **************************-->
+
+            <!-- **************PDF FORMAT ******************-->
+           <div class="pdf">
+            <img id="pdfimg" src="Images/pdf.jpg"><br>
+            <button id="pdfbtn"><a href="Images/resume.pdf">See Pdf Format</a></button>
+           </div>
+    <!-- ************** End PDF FORMAT ******************-->
+
+     <!-- ************************ Skills Bar **************************-->
+              <div class="skillset">
+              	<h2>Programming Languages Known</h2>
+              	    <div class="skills c ">C - 90%</div>
+              	    <div class="skills cpp">C++ - 70%</div>
+              	    <div class="skills java">Java - 40%</div>
+              	    <div class="skills py">Python - 30%</div>
+              	    <div class="skills mat">Matlab - 55%</div>
+
+                <h2>Web Programming</h2>
+              	    <div class="skills wd">Web Design - 70%</div>
+              	    <div class="skills wdev">Web Development - 50%</div>
+              	    <div class="skills js">JavaScript - 50%</div>
+              	    <div class="skills php">PHP - 30%</div>
+              	    <div class="skills sql">MySQL - 40%</div>
+
+              </div>
+            <!-- ************************ End Skills Bar **************************-->
+          
+</body>
+</html>

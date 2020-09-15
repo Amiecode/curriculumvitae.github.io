@@ -1,0 +1,229 @@
+	@import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
+*{
+	padding:0; margin: 0; box-sizing: border-box;
+	font-family: 'Josefin Sans', sans-serif;
+}
+  body{
+    background-image: url('Images/carrier.jpg');
+    background-size: cover;
+  }
+  .carousel-cell {
+              width: 77%; /* full width */
+              height: 170px; /* height of carousel */
+              margin-right: 10px;
+              text-align: center;
+              line-height: 40px;
+              background:linear-gradient(to left,#fff,#3498db);
+              opacity: 0.9;
+              padding-top: 5px;
+           }
+
+            #amir{
+            border-radius: 50%;
+            height: 150px;
+            width: 150px;
+            float: left;
+            position: fixed;
+            margin-left: 300px;
+           }
+           #muheetslide #amir2{
+            border-radius: 50%;
+            height: 150px;
+            width: 150px;
+            float: left;
+           }
+           #muheetslide #muheetsir{
+            border-radius: 50%;
+            height: 150px;
+            width: 150px;
+            float: right;
+           }     
+/********* Hamburger Menu *********/
+      #lines{
+        position: absolute;
+        top: 20px;
+      }
+        .bar{
+            display: none;
+            width: 200px;
+            height: 100vh;
+            background: linear-gradient(to left,#fff,#3498db);
+            position: fixed;
+            top: 0;
+            left:0;
+            z-index: 1;
+        }
+        .bar a{
+            display: block;
+            text-decoration: none;
+            padding: 30px 30px 8px 30px;
+            color: black;
+            font-size: 15px;
+            letter-spacing: 1px;  
+        }
+        .bar a:hover{
+          background:linear-gradient(to right,#649bff,#0070fa,#649bff);
+          color: white;
+        }
+        .cross{
+            padding-left: 160px;
+        }
+        .bar #cvlogo{
+            padding-left: 15px;
+        }
+        .bar #amielogo{
+            position: fixed;
+            bottom: 10px;
+            left:10px;
+            height: 60px;
+            width: 50px;
+        }
+        #headimg{
+          margin-left: 35px;
+        }
+        /********* End Hamburger Menu *********/ 
+        /*Skill Set*/
+        .skillset{
+	width: 485px;
+	height: 450px;
+	background-color: rgba(163,207,201,0.3);
+	padding:10px;
+	border-radius: 15px;
+	border:2px solid #ccc;
+	left: 150px;
+	top: 260px;
+	position: absolute;
+
+}
+.skills{
+	text-align: right;
+	padding-top: 5px;
+	padding-bottom: 10px;
+	color: white;
+	font-family: ink free;
+	background-color: grey;
+	border-radius: 10%;
+	border:0.25px solid #ccc;
+}
+/*Programming Lang:*/
+.c{
+   width: 90%;
+   background-color: #17d8e6;
+}
+.cpp{
+    width: 70%;
+   background-color: #999c86;
+}
+.java{
+    width: 40%;
+   background-color: #17d8e6;
+}
+.py{
+    width: 30%;
+   background-color: #999c86;
+}
+.mat{
+     width: 55%;
+   background-color: #17d8e6;
+}
+/*Web Programming*/
+.wd{
+     width: 70%;
+   background-color: #999c86;
+}
+.wdev{
+     width: 50%;
+   background-color: #17d8e6;
+}
+.js{
+    width: 50%;
+   background-color: #999c86;
+}
+.php{
+   width: 30%;
+   background-color: #17d8e6;
+}
+.sql{
+     width: 40%;
+   background-color: #999c86;
+}
+        /*End Skill Set*/
+
+        /**************PDF FORMAT ******************/
+    .pdf{
+      position: absolute;
+      text-align: center;
+      border:1px solid red;
+      box-shadow: 2px 2px 3px #63615b;
+      border-radius: 20px;
+      left: 680px;
+      top:550px;
+      
+    }
+    #pdfimg{
+      height: 100px;
+      width: 100px;
+    }
+    #pdfbtn{
+      padding: 10px 45px;
+      text-align: center;
+      font-size: 14px;
+      border: none;
+      background-image:linear-gradient(to right,#a80b00,red,#a80b00);
+      border-radius: 10px;
+      color: #fff;
+    }
+    #pdfbtn a{
+      text-decoration: none;
+      color: #fff
+    }
+      /************** End PDF FORMAT ******************/
+  /*Testimonial*/
+.container{
+	height: 200px;
+	width: 450px;
+	border:2px solid #ccc;
+	border-radius: 10%;
+	padding:25px;
+	position: absolute;
+	right:150px;
+	bottom:210px;
+	background-color: rgba(163,207,201,0.2);
+	
+
+}
+.containeramie{
+	height: 200px;
+	width: 450px;
+	border:2px solid #ccc;
+	border-radius: 10%;
+	padding:25px;
+	position: absolute;
+	right: 150px;
+	bottom:5px;
+	background-color: rgba(163,207,201,0.2);
+	
+
+}
+.container img{
+	padding-left: 2px;
+	padding-top: 5px;
+	border-radius: 50%;
+	float: left;
+	margin-right: 20px;
+	
+}
+.containeramie img{
+	padding-left: 2px;
+	padding-top: 5px;
+	border-radius: 50%;
+	float: left;
+	margin-right: 20px;
+	
+}
+
+h3,p{
+    text-align: center;
+    font-family: helvetica;
+}
+ /* End Testimonila */ 
